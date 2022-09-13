@@ -78,20 +78,29 @@ public:
         node* cu1 = l1.head;
         node* cu2 = l2.head;
         
-        //add all data in 1st list to new list
-        while(cu1 != nullptr) {
+        //compare first 2 numbers
+        if(cu1->data < cu2->data) {
             l3.insert(cu1->data);
-            //loop condition
             cu1 = cu1->next;
         }
-        //add all data in 2nd list to new list
-        while( cu2 != nullptr) {
+        else {
             l3.insert(cu2->data);
             cu2 = cu2->next;
         }
         
+        //node* cu3 = l3.head; //holds first value of new list
         
-        
+        while(cu1!=nullptr && cu2!=nullptr) {
+            if(cu1->data < cu2->data) {
+                l3.insert(cu1->data);
+                cu1 = cu1->next;
+            }
+            else {
+                l3.insert(cu2->data);
+                cu2 = cu2->next;
+            }
+
+        }
         
         
         
