@@ -13,22 +13,32 @@ using namespace std;
 
 
 int main() {
-    number n1; //list
+    number List1; //list
+    number List2;
     
     
-    string input;
+    string input, input2;
 
     //reads integer inputs as string value, inlcuding whitepsaces
     getline(cin, input);
+    getline(cin, input2);
 
     stringstream ss(input);
+    stringstream ss2(input2);
     int num;
+    int num2;
 
     while(ss>>num) {
-      n1.insert(num);
+      List1.insert(num);
+    }
+    while(ss2>>num2) {
+        List2.insert(num2);
     }
 
-    n1.print();
+    List1.print();
+    cout << endl;
+    
+    List2.print();
     cout << endl;
     
     return 0;
