@@ -75,12 +75,28 @@ public:
     //function to merge lists and place in order
     void merge( number l1, number l2, number &l3) {
         
-        cout << "merge function called" << endl;
+        node* cu1 = l1.head;
+        node* cu2 = l2.head;
         
-        l3.insert(4);
-        l3.insert(5);
-        l3.insert(6);
+        //add all data in 1st list to new list
+        while(cu1 != nullptr) {
+            l3.insert(cu1->data);
+            //loop condition
+            cu1 = cu1->next;
+        }
+        //add all data in 2nd list to new list
+        while( cu2 != nullptr) {
+            l3.insert(cu2->data);
+            cu2 = cu2->next;
+        }
         
+        
+        
+        
+        
+        
+        
+
     }
     
     
