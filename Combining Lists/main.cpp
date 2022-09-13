@@ -35,10 +35,18 @@ int main() {
         List2.insert(num2);
     }
 
+    cout << "LIST 1: ";
     List1.print();
     cout << endl;
     
+    cout << "LIST 2: ";
     List2.print();
+    cout << endl;
+    
+    number List3;
+    List3.merge(List1,List2, List3);
+    cout<<"printing new list:" << endl;
+    List3.print();
     cout << endl;
     
     return 0;

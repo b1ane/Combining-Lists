@@ -72,6 +72,18 @@ public:
     }
     
     
+    //function to merge lists and place in order
+    void merge( number l1, number l2, number &l3) {
+        
+        cout << "merge function called" << endl;
+        
+        l3.insert(4);
+        l3.insert(5);
+        l3.insert(6);
+        
+    }
+    
+    
 };
 
 #endif /* list_h */
