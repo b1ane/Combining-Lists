@@ -88,27 +88,15 @@ public:
             cu2 = cu2->next;
         }
         
-        //node* cu3 = l3.head; //holds first value of new list
-        
         while(cu1!=nullptr && cu2!=nullptr) {
             if(cu1->data < cu2->data) {
                 l3.insert(cu1->data);
                 cu1 = cu1->next;
             }
-            else {
-                l3.insert(cu2->data);
-                cu2 = cu2->next;
-            }
-
+            l3.insert(cu2->data);
+            cu2 = cu2->next;
         }
-        
-        
-        
-        
-
     }
-    
-    
 };
 
 #endif /* list_h */
